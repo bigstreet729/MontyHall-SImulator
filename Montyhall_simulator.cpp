@@ -4,12 +4,12 @@
 #include<time.h>
 #include<vector>
 
-std::vector<int> get_non_revealed_doors(std::vector<int>&doors,int num_doors_opened_by_host,int num_doors,int cardoor){
+std::vector<int> get_unrevealed_doors(std::vector<int>&doors,int num_doors_opened_by_host,int num_doors,int cardoor){
 
     // Function that returns the doors which are left after revealing the k doors
     // This code will reveal first non-car doors starting from door 2( door[1]) to door n(door[n-1] )
 
-    std::vector<int> non_revealed;
+    std::vector<int> unrevealed;
     int k = num_doors_opened_by_host;
             for(int i=1;i<num_doors;i++){
                 if(k>0){
@@ -17,15 +17,15 @@ std::vector<int> get_non_revealed_doors(std::vector<int>&doors,int num_doors_ope
                         k--;
                     }
                 else{
-                    non_revealed.push_back(i);
+                    unrevealed.push_back(i);
                 }
             }
             else{
-                non_revealed.push_back(i);
+                unrevealed.push_back(i);
             }
         }
         // returning the remaining doors after revealed
-        return non_revealed;
+        return unrevealed;
 }  
 
 void run_simulations(int num_doors, int num_doors_opened_by_host, int iterations){
@@ -49,10 +49,10 @@ void run_simulations(int num_doors, int num_doors_opened_by_host, int iterations
         }
         else{
            // function to get the doors after host reveals k doors other than car and the intial pick of player 
-            std::vector<int>non_revealed = get_non_revealed_doors(doors,num_doors_opened_by_host,num_doors,cardoor);    
+            std::vector<int>unrevealed = get_unrevealed_doors(doors,num_doors_opened_by_host,num_doors,cardoor);    
 
             // Player switching random door from remaining n-k-1 non revealed doors
-            int switched_door = non_revealed[rand()%non_revealed.size()];
+            int switched_door = unrevealed[rand()%unrevealed.size()];
 
             if(switched_door==cardoor){
                 switched++;
@@ -77,5 +77,4 @@ int main(int argc, char *argv[]){
     run_simulations(num_doors,num_doors_opened_by_host,num_iterations);
 
     return 0;
-
 }
