@@ -15,9 +15,8 @@ the player wins in switching strategy. The code will  run for many simulations a
 strategy given the car door.
     
 
-# How to run the code:
-    The code takes 3 command line arguments, Total number of doors, 
-    doors revealed by host and the number of iterations to simulate.
+# Clone the Repository: 
+    Clone this repository to your local machine using Git: git clone : https://github.com/bigstreet729/MontyHall-Simulator.git
 
 # Compiling and Running the code
 ```
