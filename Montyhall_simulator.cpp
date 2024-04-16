@@ -74,7 +74,13 @@ int main(int argc, char *argv[]){
     int num_doors_opened_by_host = std::atoi(argv[2]);
     int num_iterations = std::atoi(argv[3]);
 
+    if(num_doors_opened_by_host > num_doors-2){
+        std::cout<<"Host cannot reveal more than total_number_of_doors-2\n";
+        return -1;
+    }
+
     run_simulations(num_doors,num_doors_opened_by_host,num_iterations);
 
     return 0;
+
 }
