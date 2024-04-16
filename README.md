@@ -26,6 +26,7 @@ strategy given the car door.
 ```
     ./Montyhall_simulator num_doors num_doors_opened_by_host num_simulations
 ```
+    for example: ./Montyhall_simulator 3 1 10000
 # Results of the program
     The prababilities produced by the program is closely matches to the actual probabilities for
     sufficient number of iterations for given n and k. The mathematical formuala is derived in Montyhall.pdf
