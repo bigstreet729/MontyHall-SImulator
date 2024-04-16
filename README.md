@@ -15,8 +15,9 @@ the player wins in switching strategy. The code will  run for many simulations a
 strategy given the car door.
     
 
-# Clone the Repository: 
-    Clone this repository to your local machine using Git: git clone : https://github.com/bigstreet729/MontyHall-Simulator.git
+1. Clone the Repository:
+    Clone this repository to your local machine using Git:
+    git clone https://github.com/bigstreet729/MontyHall-Simulator.git
 
 # Compiling and Running the code
 ```
