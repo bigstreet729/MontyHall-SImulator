@@ -1,6 +1,7 @@
 # Problem Statement:
     This is program that simulates the Monty Hall Problem with variable number of doors and
-    host opening variable number of doors.The output of the code is the simulated probabilities of winnning in sticking to intial choice and switching to another door.
+    host opening variable number of doors.The output of the code is the simulated 
+    probabilities of winnning in sticking to intial choice and switching to another door.
 
 # Code Description:
 
