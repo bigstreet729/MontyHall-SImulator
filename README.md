@@ -23,3 +23,6 @@ strategy given the car door.
 ```
     g++ -o Montyhall_simulator Montyhall_simulator.cpp
     ./Montyhall_simulator num_doors num_doors_opened_by_host num_simulations
+# Results of the program
+    The prababilities produced by the program is closely matches to the actual probabilities for
+    sufficient iterations for given n and k. The mathematical formuala is derived in Montyhall.pdf
