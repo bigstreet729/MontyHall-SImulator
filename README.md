@@ -22,6 +22,8 @@ strategy given the car door.
 # Compiling and Running the code
 ```
     g++ -o Montyhall_simulator Montyhall_simulator.cpp
+```
+```
     ./Montyhall_simulator num_doors num_doors_opened_by_host num_simulations
 ```
 # Results of the program
