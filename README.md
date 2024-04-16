@@ -26,4 +26,4 @@ strategy given the car door.
 ```
 # Results of the program
     The prababilities produced by the program is closely matches to the actual probabilities for
-    sufficient iterations for given n and k. The mathematical formuala is derived in Montyhall.pdf
+    sufficient number of iterations for given n and k. The mathematical formuala is derived in Montyhall.pdf
